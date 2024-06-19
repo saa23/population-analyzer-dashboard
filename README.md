@@ -5,6 +5,12 @@ A dashboard about population insights built by using Power BI.
 ## 1. Dataset
 Worldwide population in country-level from 2010 to 2040.
 
+Here are the files included to build the dashboard:
+- population-2010-2019.csv
+- population-2020-2029.csv
+- population-2030-2040.xlsx
+- code.txt
+
 ## 2. Methods and Processing
 For the database design and the relationship basically using star schema design with three dimensional tables connected by single fact table.
 
@@ -12,6 +18,14 @@ Here, I used [dbdiagram](https://dbdiagram.io/) to generate the ERD:
 
 ![star-schema](./images/star-schema-design-dark.png)
 
+Following are procedures to build the dashboard:
+- Load dataset files
+- Concatenate files into single table
+- Data cleansing
+- Data transformation
+- Define the relationship between tables
+- Generate the visualizations
+- Combine the visualization into single coherent dashboard
 
 ## 3. Insights
 The dashboard split by multiple pages:
