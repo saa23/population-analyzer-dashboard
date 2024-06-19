@@ -1,6 +1,10 @@
 # population-analyzer-dashboard
+In this project, we leverage the powerful data visualization and analysis capabilities of Power BI to create an insightful dashboard that visualizes population trends over a 30-year period (2010-2040).
 
-A dashboard about population insights built by using Power BI. 
+The primary goals of this dashboard are:
+- **Visualization**: To create clear and informative visual representations of population trends.
+- **Analysis**: To analyze population growth, declines, and demographic shifts over time in each region and country.
+- **Interactivity**: To provide an interactive user experience where users can explore data based on different filters and parameters.
 
 ## 1. Dataset
 Worldwide population in country-level from 2010 to 2040.
@@ -12,7 +16,7 @@ Here are the files included to build the dashboard:
 - code.txt
 
 ## 2. Methods and Processing
-For the database design and the relationship basically using star schema design with three dimensional tables connected by single fact table.
+For the database design and the relationship basically using star schema design with three dimension tables connected by single fact table.
 
 Here, I used [dbdiagram](https://dbdiagram.io/) to generate the ERD:
 
@@ -20,9 +24,10 @@ Here, I used [dbdiagram](https://dbdiagram.io/) to generate the ERD:
 
 Following are procedures to build the dashboard:
 - Load dataset files
-- Concatenate files into single table
-- Data cleansing
-- Data transformation
+- Concatenate files into single table (utilize Power Query)
+- Data cleansing (utilize Power Query)
+- Data transformation (utilize Power Query)
+- Create custom and measure columns (using Power Query and DAX)
 - Define the relationship between tables
 - Generate the visualizations
 - Combine the visualization into single coherent dashboard
